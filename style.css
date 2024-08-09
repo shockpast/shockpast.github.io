@@ -44,29 +44,51 @@ div.container > div.child > h1.title {
 }
 
 div.container > div.child > p.description {
+  text-align: left;
+  font-family: "Roboto Mono";
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--unk1);
+  width: 500px;
+  margin: 10px auto 10px -50px;
+}
+
+div.container > div.child > p#typewriter {
   text-align: center;
   font-family: "Roboto Mono";
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 12px;
   color: var(--unk1);
+}
+
+div.container > div.child > hr.divider {
+  height: 3px;
+  border: none;
+  border-radius: 6px;
+  width: 480px;
+  background: var(--unk1);
+  margin: 10px auto 10px -50px;
 }
 
 div.container > div.child > div.buttons {
   display: flex;
+  align-items: center;
   justify-content: center;
-  z-index: 999;
 }
 
 div.container > div.child > div.buttons > a.button {
   text-align: center;
   text-decoration: none;
-  margin: 0 3px;
+  margin: 0 4px;
 }
 
-svg.icon { transition: all 0.2s ease-in-out; }
+svg.icon {
+  transition: all 0.2s linear;
+  transform: translate(0 2px);
+}
 
-svg.icon-modrinth:hover { transition: all 0.2s ease-in-out; filter: drop-shadow(0 0 15px rgba(0, 175, 92, .9)); }
-svg.icon-github:hover { transition: all 0.2s ease-in-out; filter: drop-shadow(0 0 15px rgba(24, 23, 23, .9)); }
-svg.icon-telegram:hover { transition: all 0.2s ease-in-out; filter: drop-shadow(0 0 15px rgba(38, 165, 228, .9)); }
-svg.icon-stackoverflow:hover { transition: all 0.2s ease-in-out; filter: drop-shadow(0 0 15px rgba(245, 128, 37, .9)); }
-svg.icon-discord:hover { transition: all 0.2s ease-in-out; filter: drop-shadow(0 0 15px rgba(88, 101, 242, .9)); }
+svg.icon-modrinth:hover { transition: all 0.2s linear; filter: drop-shadow(0 0 15px rgba(0, 175, 92, .9)); }
+svg.icon-github:hover { transition: all 0.2s linear; filter: drop-shadow(0 0 15px rgba(211, 202, 202, 0.9)); fill: white; }
+svg.icon-telegram:hover { transition: all 0.2s linear; filter: drop-shadow(0 0 15px rgba(38, 165, 228, .9)); }
+svg.icon-stackoverflow:hover { transition: all 0.2s linear; filter: drop-shadow(0 0 15px rgba(245, 128, 37, .9)); }
+svg.icon-discord:hover { transition: all 0.2s linear; filter: drop-shadow(0 0 15px rgba(88, 101, 242, .9)); }

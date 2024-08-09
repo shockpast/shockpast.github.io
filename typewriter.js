@@ -2,18 +2,18 @@ const TYPEWRITER_INTERVAL = 100
 const TYPEWRITER_DELAY = 1500
 const TYPEWRITER_TEXT = [
   "lua is language of gods", "hello :)", "greenteaneko",
-  "gigachad", "hamster criminal", "unsafe { gun::shoot(); }", "pipebomb!",
-  "ferra is gud", "all my homies use <insert something>"
+  "gigachad", "hamster criminal", "unsafe { gun::shoot(); }",
+  "pipebomb!", "ferra is gud", "all my homies use <insert something>",
+  "hugofrost is back!!!!", "i need medic bag!", "how are you?",
+  "poor to afford actual webserver"
 ]
 const TYPEWRITER_INSERT = [
   "papermc", "spigot", "cheadleware", "noxus", "asuna-gmod", "gigachad ide",
-  "jetbrains software", "rust", "vscode", "lua"
+  "jetbrains software", "rust", "vscode", "lua", "rustlang", "maple"
 ]
 
-const EMPTY_CHARACTER = "‎‎‎"
-
-window.addEventListener("load", (event) => {
-  /* @Getter */ function getDescription() { return document.querySelector("p#description") }
+window.addEventListener("load", () => {
+  /* @Getter */ function getDescription() { return document.querySelector("p#typewriter") }
   /* @Getter */ function getText() { return getDescription().innerHTML }
   /* @Setter */ function setText(text) { getDescription().innerHTML = text }
 
@@ -42,7 +42,7 @@ window.addEventListener("load", (event) => {
         text = randomText()
         text = text.replace("<insert something>", insert)
 
-        setText(">")
+        setText("> ")
       }, TYPEWRITER_DELAY);
     }
 
