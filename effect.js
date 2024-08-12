@@ -32,6 +32,6 @@ window.addEventListener("load", () => {
         snowContainer[i].x = 0
       if (data.y >= window.innerHeight)
         snowContainer[i].y = -100 + randomArbitrary(-5000, 0)
-    }, 30);
+    }, randomArbitrary(30, 100));
   }
 })
