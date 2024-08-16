@@ -2,8 +2,8 @@ form > input.url {
   font-family: monospace;
   border: 1px solid #ffffff54;
   background-color: #ffffff04;
-  border-radius: 4px;
   width: 170px;
+  text-align: center;
   color: white;
 }
 
@@ -15,7 +15,6 @@ form > button.download {
   font-family: monospace;
   border: 1px solid #ffffff54;
   background-color: #ffffff04;
-  border-radius: 4px;
   cursor: pointer;
   color: white;
   text-align: center;
